@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Buenard&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #404042;
+}
+nav ul{
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+    font-size: 40px;
+    height: 110px;
+}
+.nav-links ul li a{
+    color: #ee961b;
+    text-decoration: none;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+nav ul li{
+    padding: 0 60px;
+}
+.logo{
+    display: flex;
+    font-family: 'Buenard', serif;
+    padding-left: 0 12px;
+    align-items: top;
+    font-weight: bold;
+    font-size: 2.3rem;
+    padding: 0 70px;
+}
+.logo img{
+    width: 225px;
+}
+.logo a{
+    color: #ee961b;
+    text-decoration: none;
+}
+.maintain{
+    font-size: large;
+    position: absolute;
+    font-family: 'Mulish', sans-serif;
+    top: 50%;
+    left: 20%;
+    text-align: center;
+    color: #404042;
+}
+.regform{
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    margin-top: 45px;
+    padding-top: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: #404042;
+    justify-content: center;
+    align-items: flex-start;
+    border: #ee961b solid 3px;
+    border-radius: 15px;
+    width: 800px;
+    height: 490px;
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+.reghead{
+    font-family: 'Mulish', sans-serif;
+    position: absolute;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.regpara{
+    width: 60%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    transform: translate(-50%);
+    font-size: 20px;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.regp1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.regp2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.details{
+    display: block;
+    margin-bottom: 2px;
+    margin-top: 20px;
+}
+.button button{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 447.5px;
+    left: 467.5px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    background-color: #ee961b;
+    border-radius: 7px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 17px;
+    transition: ease-in 0.2s;
+}
+.button button:hover{
+    top: 450px;
+    left: 470px;
+    background-color: #e9aa53;
+    border-radius: 2px;
+    width: 145px;
+    height: 35px;
+}
+.alert{
+    opacity: 0;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-size: 17px;
+    font-family: 'Mulish', sans-serif;
+    background-color: #ee961b;
+    color: #fff;
+    padding-top: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: ease-in-out 0.3s;
+}
+.fcontainer{
+    max-width: 1500px;
+    margin: auto;
+    justify-content: center;
+    place-items: center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    margin-top: 700px;
+    background-color: #404042;
+    padding: 70px 0;
+}
+.footer-col{
+    text-align: center;
+    width: 50%;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 0.5s ease-in-out;
+}
+.fcshow{
+    opacity: 1;
+    transform: translateY(0);
+}
+.footer-col:nth-child(2){
+    transition-delay: 100ms;
+}
+.footer-col:nth-child(3){
+    transition-delay: 200ms;
+}
+.footer-col h4{
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    color: #e9aa53;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+.show{
+    opacity: 1;
+}
+@media (min-width: 1919px) {
+    nav ul{
+        font-size: 50px;
+        height: 137.5px;
+    }
+    .logo{
+        padding-left: 0 15px;
+        padding: 0 87.5px;
+    }
+    .logo img{
+        max-width: 281.25px;
+        max-height: 281.25px;
+        width: 281.25px;
+    }
+    .regform{
+        position: relative;
+        margin-top: 97px;
+        padding-top: 100px;
+        padding-left: 2px;
+        padding-right: 2px;
+        border: #ee961b solid 3.75px;
+        border-radius: 19px;
+        width: 975px;
+        height: 612.5px;
+    }
+    .reghead{
+        font-size: 50px;
+        letter-spacing: 2.5px;
+    }
+    .regpara{
+        font-size: 25px;
+        margin-top: 107px;
+        padding: 20px;
+    }
+    .details{
+        margin-bottom: 7px;
+        margin-top: 25px;
+    }
+    .button button{
+        top: 562px;
+        left: 600px;
+        width: 187.5px;
+        height: 50px;
+        border-radius: 8.75px;
+        letter-spacing: 3.75px;
+        font-size: 21.25px;
+    }
+    .button button:hover{
+        top: 565px;
+        left: 603px;
+        border-radius: 2.5px;
+        width: 181.25px;
+        height: 43.75px;
+    }
+    .alert{
+        height: 37.5px;
+        font-size: 21.25px;
+        padding-top: 12.5px;
+        border-top-left-radius: 18.75px;
+        border-top-right-radius: 18.75px;
+    }
+    .fcontainer{
+        max-width: 1875px;
+    }
+    .footer{
+        margin-top: 180px;
+        padding: 87.5px 0;
+    }
+    .footer-col{
+        padding: 0 31.25px;
+    }
+    .footer-col h4{
+        font-size: 22.5px;
+        margin-bottom: 37.5px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 12.5px;
+    }
+    .footer-col ul li a{
+        font-size: 20px;
+    }
+}

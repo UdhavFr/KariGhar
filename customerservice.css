@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Buenard&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #404042;
+}
+nav ul{
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+    font-size: 40px;
+    height: 110px;
+}
+.nav-links ul li a{
+    color: #ee961b;
+    text-decoration: none;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+nav ul li{
+    padding: 0 60px;
+}
+.logo{
+    display: flex;
+    font-family: 'Buenard', serif;
+    padding-left: 0 12px;
+    align-items: top;
+    font-weight: bold;
+    font-size: 2.3rem;
+    padding: 0 70px;
+}
+.logo img{
+    width: 225px;
+}
+.logo a{
+    color: #ee961b;
+    text-decoration: none;
+}
+.maintain{
+    font-size: large;
+    position: absolute;
+    font-family: 'Mulish', sans-serif;
+    top: 50%;
+    left: 20%;
+    text-align: center;
+    color: #404042;
+}
+.suggestion{
+    margin-left: 165px;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    text-align: center;
+    min-height: 100vh;
+    align-self: center;
+}
+.suggest{
+    place-items: center;
+    width: 50%;
+    margin-top: 160px;
+    top: 100px;
+    color: #404042;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 35px;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: 0.5s ease-out;
+}
+.suggform{
+    position: absolute;
+    top: 450px;
+    color: #404042;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: 0.5s ease-out;
+}
+.suggform input{
+    height: 20px;
+    width: 1000px;
+    color: #404042;
+}
+.button{
+    opacity: 0;
+    transform: scale(0.95);
+    transition: 0.5s ease-out;
+}
+.button button{
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 120px;
+    height: 35px;
+    border: none;
+    color: #fff;
+    background-color: #ee961b;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 40px;
+    transition: ease-in 0.1s;
+}
+.button button:hover{
+    background-color: #e9aa53;
+}
+.fcontainer{
+    max-width: 1500px;
+    margin: auto;
+    justify-content: center;
+    place-items: center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #404042;
+    padding: 70px 0;
+}
+.footer-col{
+    text-align: center;
+    width: 50%;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 0.5s ease-in-out;
+}
+.footer-col:nth-child(2){
+    transition-delay: 100ms;
+}
+.footer-col:nth-child(3){
+    transition-delay: 200ms;
+}
+.footer-col h4{
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    color: #e9aa53;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+.show{
+    opacity: 1;
+    transform: translateX(0%);
+    transform: translateY(0%);
+    filter: blur(0px);
+    transform: scale(1);
+}
+@media (min-width: 1919px) {
+    nav ul{
+        font-size: 50px;
+        height: 137.5px;
+    }
+    .logo{
+        padding-left: 0 15px;
+        padding: 0 87.5px;
+    }
+    .logo img{
+        max-width: 281.25px;
+        max-height: 281.25px;
+        width: 281.25px;
+    }
+    .suggestion{
+        margin-left: 0;
+        margin-top: 400px;
+        min-height: 55vh;
+    }
+    .suggest{
+        margin-top: 200px;
+        top: 175px;
+        font-size: 45px;
+    }
+    .suggform{
+        top: 618px;
+    }
+    .suggform input{
+        height: 25px;
+        width: 1250px;
+    }
+    .button button{
+        width: 150px;
+        height: 43.75px;
+        border-radius: 2.5px;
+        font-size: 21.25px;
+        margin-top: 56px;
+    }
+    .fcontainer{
+        max-width: 1500px;
+    }
+    .fcontainer{
+        max-width: 1875px;
+    }
+    .footer{
+        padding: 87.5px 0;
+    }
+    .footer-col{
+        padding: 0 31.25px;
+    }
+    .footer-col h4{
+        font-size: 22.5px;
+        margin-bottom: 37.5px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 12.5px;
+    }
+    .footer-col ul li a{
+        font-size: 20px;
+    }
+}
