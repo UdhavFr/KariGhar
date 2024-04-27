@@ -232,8 +232,7 @@ ul{
 }
 .footer-col{
     text-align: center;
-    width: 30%;
-    padding: 0 25px;
+    width: 50%;
     opacity: 0;
     transform: translateY(20%);
     transition: 0.5s ease-in-out;
